@@ -1,0 +1,106 @@
+@media (max-width: 760px) {
+    #df_manual_book {
+        margin-top: 15%;
+    }
+
+    .navbar {
+        flex-direction: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .navbar button {
+        width: 30%;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .icon-share {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+
+.navbar {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar {
+    top: 0;
+    transform: translateY(-100%);
+}
+
+.navbar.show {
+    transform: translateY(0);
+}
+
+.navbar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.icon-share {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.logo {
+    margin-left: 35px;
+    margin-right: 15px;
+}
+
+.button {
+    display: flex;
+}
+
+.navbar .facebook {
+    background-color: #3b5998;
+}
+
+.navbar .line {
+    background-color: #00c300;
+}
+
+.navbar .twitter {
+    background-color: #1da1f2;
+}
+
+.navbar .linkedin {
+    background-color: #0077b5;
+}
+
+.navbar .whatsapp {
+    background-color: #25d366;
+}
+
+.navbar button:hover {
+    opacity: 0.8;
+}
+
+.df-ui-controls {
+    display: none;
+}
